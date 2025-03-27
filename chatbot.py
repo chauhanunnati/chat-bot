@@ -23,7 +23,7 @@ def save_memory(memory):
         json.dump(memory, file)
 
 # Get response from Wikipedia
-def search_wikipedia(query):
+def search_wikipedia(query): 
     page = wiki_wiki.page(query)
     if page.exists():
         return page.summary[:300] + "..."
