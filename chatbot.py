@@ -9,7 +9,7 @@ import uvicorn
 # Constants
 MEMORY_FILE = "chatbot_memory.json"
 
-USER_AGENT = "MyChatbot/1.0 (contact: chauhan.unnati10@gmail.com@)"  # Replace with your actual contact email or domain
+USER_AGENT = "MyChatbot/1.0 (contact: chauhan.unnati10@gmail.com)"  # Replace with your actual contact email or domain
 
 wiki_wiki = wikipediaapi.Wikipedia(
     language="en",
