@@ -8,7 +8,13 @@ import uvicorn
 
 # Constants
 MEMORY_FILE = "chatbot_memory.json"
-wiki_wiki = wikipediaapi.Wikipedia("en")
+
+USER_AGENT = "MyChatbot/1.0 (contact: chauhan.unnati10@gmail.com@)"  # Replace with your actual contact email or domain
+
+wiki_wiki = wikipediaapi.Wikipedia(
+    language="en",
+    user_agent=USER_AGENT
+)
 
 # Load chatbot memory
 def load_memory():
